@@ -45,6 +45,7 @@
                 <li><a href="register_form.php" class="register"><span>sign up</span></a></li>
             </ul>
         </li> -->
+        <!-- hola -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             User
