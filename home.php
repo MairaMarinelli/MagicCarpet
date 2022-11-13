@@ -12,7 +12,7 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
@@ -23,7 +23,7 @@
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -34,30 +34,20 @@
     <section class="header">
         <a href="home.php" class="logo-name text-decoration-none"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
-        <nav class="navbar">
-        <a href="home.php" class="text-decoration-none">home</a>
-        <a href="about.php" class="text-decoration-none">about</a>
-        <a href="package.php" class="text-decoration-none">package</a>
-        <!-- <li>
-            <a href="#">User <i class="fas fa-caret-down"></i></a>
-            <ul>
-                <li><a href="login_form.php" class="login"><span>log in</span></a></li>
-                <li><a href="register_form.php" class="register"><span>sign up</span></a></li>
-            </ul>
-        </li> -->
-        <!-- hola -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            User
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a href="login_form.php" class="login dropdown-item"><span>log in</span></a></li>
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+        <nav class="navbar d-flex justify-content-right">
+            <a href="home.php" class="text-decoration-none">home</a>
+            <a href="about.php" class="text-decoration-none">about</a>
+            <a href="package.php" class="text-decoration-none">package</a>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
+                    <i class="fa fa-caret-down" style="padding-left:5px;"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="login_form.php">Log in</a>
+                    <a href="register_form.php">Sign up</a>
+                    <a href="profile.php">Profile</a>
+                </div>
+            </div>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>

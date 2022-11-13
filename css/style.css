@@ -119,12 +119,6 @@ section{
    align-items: center;
 }
 
-.header .navbar a li{
-   font-size: 2rem;
-   margin-left: 2rem;
-   color:var(--black);
-}
-
 .header .login{
    color:var(--main-color) !important;
 }
@@ -133,16 +127,55 @@ section{
    color:var(--black);
 }
 
-.header .navbar a:hover{
+.header .navbar {
+   display: inline-flex;
+}
+
+.header .navbar a {
+   font-size: 2rem;
+   margin-left: 2rem;
+   color:var(--black);
+}
+
+.header .navbar a:hover,
+.dropdown:hover .dropbtn{
    color:var(--main-color);
 }
-/* .header .navbar ul{
-   visibility: hidden;
-}
-.header .navbar ul:hover > li{
-   visibility: visible;
-   transition: .3s linear;
-} */
+.header .navbar .dropbtn {
+   font-size: 2rem;
+   margin-left: 2rem;
+   color: var(--black);
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .header .navbar .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+ 
+ .header .navbar .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .header .navbar .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .header .navbar .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
 
 #menu-btn{
    font-size: 2.5rem;
@@ -590,6 +623,36 @@ section{
 }
 .form-container form p a{
    color:var(--main-color);
+}
+
+/*profile css*/
+.form-control:focus {
+   box-shadow: none;
+   border-color: #BA68C8
+}
+
+.profile-button {
+   background: rgb(99, 39, 120);
+   box-shadow: none;
+   border: none
+}
+
+.profile-button:hover {
+   background: #682773
+}
+
+.profile-button:focus {
+   background: #682773;
+   box-shadow: none
+}
+
+.profile-button:active {
+   background: #682773;
+   box-shadow: none
+}
+
+.labels {
+   font-size: 11px
 }
 
 
