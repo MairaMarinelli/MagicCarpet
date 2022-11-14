@@ -474,21 +474,25 @@ section{
 }
 
 
-/*booking css*/
-.booking .book-form{
+/*booking and profile css*/
+.booking .book-form,
+.profile .profile-form{
    padding:2rem;
    background: var(--light-bg);
    display: grid;
 }
-.booking .book-form .flex{
+.booking .book-form .flex,
+.profile .profile-form .flex{
    display: flex;
    flex-wrap: wrap;
    gap:2rem;
 }
-.booking .book-form .flex .inputBox{
+.booking .book-form .flex .inputBox,
+.profile .profile-form .flex .inputBox{
    flex:1 1 41rem;
 }
-.booking .book-form .flex .inputBox input{
+.booking .book-form .flex .inputBox input,
+.profile .profile-form .flex .inputBox input{
    width: 100%;
    padding:1.2rem 1.4rem;
    font-size: 1.6rem;
@@ -497,23 +501,27 @@ section{
    margin-top: 1.5rem;
    border:var(--border);
 }
-.booking .book-form .flex .inputBox input:focus{
+.booking .book-form .flex .inputBox input:focus,
+.profile .profile-form .flex .inputBox input:focus{
    background: var(--black);
    color:var(--white);
 }
-.booking .book-form .flex .inputBox input:focus::placeholder{
+.booking .book-form .flex .inputBox input:focus::placeholder,
+.profile .profile-form .flex .inputBox input:focus::placeholder{
    color:var(--light-white);
 }
-.booking .book-form .flex .inputBox span{
+.booking .book-form .flex .inputBox span,
+.profile .profile-form .flex .inputBox span{
    font-size: 1.5rem;
    color:var(--light-black);
 }
-.booking .book-form .btn{
+.booking .book-form .btn,
+.profile .profile-form .btn{
    margin-top: 2rem;
 }
 
 
-/*contact css*/
+/*form contact css*/
 .form-container-contact{
    min-height: auto;
    display: flex;
@@ -626,6 +634,7 @@ section{
 }
 
 /*profile css*/
+/*
 .form-control:focus {
    box-shadow: none;
    border-color: #BA68C8
@@ -654,6 +663,7 @@ section{
 .labels {
    font-size: 11px
 }
+*/
 
 
 /*footer css*/

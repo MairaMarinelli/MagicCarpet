@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="header">
@@ -51,7 +63,10 @@
     </div> -->
     <section class="profile">
         <h1 class="heading-title">edit your profile!</h1>
-        <form action="profile_form.php" method="post" class="profile-form">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/user-icon.png"></div>
+        </div>
+        <form action="profile_form.php" method="post" class="col-md-5 border-right profile-form">
             <div class="flex">
                 <div class="inputBox">
                     <span>name :</span>
@@ -60,26 +75,23 @@
                     <input type="text" placeholder="enter your surname" name="surname">
                 </div>
                 <div class="inputBox">
-                    <span>dni :</span>
-                    <input type="number" placeholder="enter your dni" name="dni">
+                    <span>Mobile Number :</span>
+                    <input type="number" placeholder="enter your mobilenumber" name="mobilenumber">
+                    <span>Address :</span>
+                    <input type="text" placeholder="enter your address" name="address">
                 </div>
                 <div class="inputBox">
-                    <span>how many :</span>
-                    <input type="number" placeholder="number of guests" name="guests">
-                </div>
-                <div class="inputBox">
-                    <span>Payment data :</span>
-                    <input type="number" placeholder="enter your card numbers" name="cardnumber">
-                    <input type="number" placeholder="enter the card owner's dni" name="dni">
-                    <input type="number" placeholder="enter your card code" name="code">
+                    <span>State :</span>
+                    <input type="text" placeholder="enter your state" name="state">
+                    <span>Address :</span>
+                    <input type="text" placeholder="enter your country" name="country">
                 </div>
             </div>
-
             <input type="submit" value="submit" class="btn" name="send">
         </form>
     </section>
 
-    <section class="booking">
+    <!-- <section class="booking">
         <h1 class="heading-title">book your trip!</h1>
 
         <form action="book_form.php" method="post" class="book-form">
@@ -106,10 +118,7 @@
 
             <input type="submit" value="submit" class="btn" name="send">
         </form>
-    </section>
-
-
-
+    </section> -->
 
     <section class="footer">
         <div class="box-container">
