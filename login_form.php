@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,18 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
-    </head>
-    <body>
+</head>
+<body>
     
     <div class="form-container">
+        <form action="" method="post">
+            <h3>log in</h3>
 
-    <form action="" method="post">
-        <h3>log in</h3>
-
-        <input type="email" name="email" required placeholder="enter your email">
-        <input type="password" name="password" required placeholder="enter your password">
-        <input type="submit" name="submit" value="login now" class="form-btn" onclick="location.href='home.php'">
-        <p>don't have an account? <a href="register_form.php">register now</a></p>
-    </form>
+            <input type="email" name="email" required placeholder="enter your email">
+            <input type="password" name="password" required placeholder="enter your password">
+            <input type="submit" name="submit" value="login now" class="form-btn" onclick="location.href='home.php'">
+            <p>don't have an account? <a href="register_form.php">register now</a></p>
+        </form>
     </div>
-
-    </body>
+</body>
 </html>

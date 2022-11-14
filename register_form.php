@@ -11,23 +11,23 @@
 </head>
 <body>
    
-<div class="form-container">
+   <div class="form-container">
 
-   <form action="" method="post">
-      <h3>register</h3>
+      <form action="" method="post">
+         <h3>register</h3>
 
-      <input type="email" name="email" required placeholder="enter your email">
-      <input type="password" name="password" required placeholder="enter your password">
-      <input type="password" name="cpassword" required placeholder="confirm your password">
-      <select name="user_type">
-         <option value="user">user</option>
-         <option value="admin">admin</option>
-      </select>
-      <input type="submit" name="submit" value="register now" class="form-btn" onclick="location.href='home.php'">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
-   </form>
+         <input type="email" name="email" required placeholder="enter your email">
+         <input type="password" name="password" required placeholder="enter your password">
+         <input type="password" name="cpassword" required placeholder="confirm your password">
+         <select name="user_type">
+            <option value="user">user</option>
+            <option value="admin">admin</option>
+         </select>
+         <input type="submit" name="submit" value="register now" class="form-btn" onclick="location.href='home.php'">
+         <p>already have an account? <a href="login_form.php">login now</a></p>
+      </form>
 
-</div>
+   </div>
 
 </body>
 </html>

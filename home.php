@@ -32,12 +32,12 @@
 <body>
 
     <section class="header">
-        <a href="home.php" class="logo-name text-decoration-none"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
+        <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
         <nav class="navbar d-flex justify-content-right">
-            <a href="home.php" class="text-decoration-none">home</a>
-            <a href="about.php" class="text-decoration-none">about</a>
-            <a href="package.php" class="text-decoration-none">package</a>
+            <a href="home.php">home</a>
+            <a href="about.php">about</a>
+            <a href="package.php">package</a>
             <div class="dropdown">
                 <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>

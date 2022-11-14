@@ -21,11 +21,20 @@
     <section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
-        <nav class="navbar">
-        <a href="home.php">home</a>
-        <a href="about.php">about</a>
-        <a href="package.php">package</a>
-        <a href="login_form.php" class="login"><span>log in</span></a>
+        <nav class="navbar d-flex justify-content-right">
+            <a href="home.php">home</a>
+            <a href="about.php">about</a>
+            <a href="package.php">package</a>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
+                    <i class="fa fa-caret-down" style="padding-left:5px;"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="login_form.php">Log in</a>
+                    <a href="register_form.php">Sign up</a>
+                    <a href="profile.php">Profile</a>
+                </div>
+            </div>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>

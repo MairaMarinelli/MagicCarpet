@@ -112,6 +112,7 @@ section{
    font-size: 2.5rem;
    color:var(--black);
    margin-left: 1rem;
+   text-decoration: none;
 }
 
 .header .logo-name{
@@ -135,6 +136,7 @@ section{
    font-size: 2rem;
    margin-left: 2rem;
    color:var(--black);
+   text-decoration: none;
 }
 
 .header .navbar a:hover,
