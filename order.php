@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
 
-    <!-- swiper css link  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -93,7 +90,7 @@
                 <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
                 <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
             </div>
-            
+
             <div class="box">
                 <h3>quick links</h3>
                 <a href="#"> <i class="fas fa-angle-right"></i> contact</a>
