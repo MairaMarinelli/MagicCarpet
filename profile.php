@@ -34,6 +34,7 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
+                    <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>

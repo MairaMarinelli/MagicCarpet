@@ -32,6 +32,7 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
+                    <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
@@ -56,7 +57,7 @@
                 <div class="content">
                     <h3>adventure</h3>
                     <p>Come join us on this amazing journey!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -67,7 +68,7 @@
                 <div class="content">
                     <h3>sightseeing</h3>
                     <p>Discover places your have never been before!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -78,7 +79,7 @@
                 <div class="content">
                     <h3>relax</h3>
                     <p>Come and forget about all your worries!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -89,7 +90,7 @@
                 <div class="content">
                     <h3>sightseeing</h3>
                     <p>Come take a gorgeous picture!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -100,7 +101,7 @@
                 <div class="content">
                     <h3>city</h3>
                     <p>Come to visit this beautiful city!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -111,7 +112,7 @@
                 <div class="content">
                     <h3>Camping</h3>
                     <p>Discover your wild side!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -122,7 +123,7 @@
                 <div class="content">
                     <h3>relax</h3>
                     <p>Relax on the beach!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -133,7 +134,7 @@
                 <div class="content">
                     <h3>tour</h3>
                     <p>take amazing pictures with this tour!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
@@ -144,7 +145,7 @@
                 <div class="content">
                     <h3>adventure</h3>
                     <p>discover new places!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
         </div> 

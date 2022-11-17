@@ -18,6 +18,7 @@
 </head>
 <body>
 
+    <p>cuaka</p>
     <section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
@@ -32,6 +33,7 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
+                    <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>

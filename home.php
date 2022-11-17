@@ -12,22 +12,8 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link
-      href="    https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    /> -->
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -45,6 +31,7 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
+                    <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
