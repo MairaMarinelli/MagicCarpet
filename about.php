@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <p>cuaka</p>
+    <p>cuaka </p>
     <section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
