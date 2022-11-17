@@ -118,6 +118,7 @@ section{
 .header .logo-name{
    display: flex;
    align-items: center;
+   text-decoration: none;
 }
 
 .header .login{
@@ -134,7 +135,7 @@ section{
 
 .header .navbar a {
    font-size: 2rem;
-   margin-left: 2rem;
+   margin-right: 2rem;
    color:var(--black);
    text-decoration: none;
 }
@@ -145,7 +146,6 @@ section{
 }
 .header .navbar .dropbtn {
    font-size: 2rem;
-   margin-left: 2rem;
    color: var(--black);
    background-color: transparent;
    display: flex;
@@ -164,7 +164,7 @@ section{
  .header .navbar .dropdown-content a {
    float: none;
    color: black;
-   padding: 12px 16px;
+   
    text-decoration: none;
    display: block;
    text-align: left;
@@ -449,6 +449,9 @@ section{
    line-height: 2;
    padding:1rem 0;
 }
+.packages .box-container .box .content .btn-book{
+   position: relative;
+}
 .packages .load-more{
    text-align: center;
    margin-top: 2rem;
@@ -622,37 +625,11 @@ section{
    color:var(--main-color);
 }
 
-/*profile css*/
-/*
-.form-control:focus {
-   box-shadow: none;
-   border-color: #BA68C8
-}
 
-.profile-button {
-   background: rgb(99, 39, 120);
-   box-shadow: none;
-   border: none
-}
-
-.profile-button:hover {
-   background: #682773
-}
-
-.profile-button:focus {
-   background: #682773;
-   box-shadow: none
-}
-
-.profile-button:active {
-   background: #682773;
-   box-shadow: none
-}
-
-.labels {
-   font-size: 11px
-}
-*/
+/*orders css*/
+/* .myorders .content-orders{
+   border-top: ;
+} */
 
 
 /*footer css*/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>book</title>
+    <title>Order</title>
 
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -14,10 +14,8 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-
     <section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
@@ -41,37 +39,24 @@
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 
-    <!-- <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
-        <h1>book</h1>
+    <!-- <div class="heading" style="background:url(images/header-bg-1.png) no-repeat">
+        <h1>My orders</h1>
     </div> -->
 
-    <section class="booking">
-        <h1 class="heading-title">book your trip!</h1>
-
-        <form action="book_form.php" method="post" class="book-form">
-            <div class="flex">
-                <div class="inputBox">
-                    <span>name :</span>
-                    <input type="text" placeholder="enter your name" name="name">
-                </div>
-                <div class="inputBox">
-                    <span>dni :</span>
-                    <input type="number" placeholder="enter your dni" name="dni">
-                </div>
-                <div class="inputBox">
-                    <span>how many :</span>
-                    <input type="number" placeholder="number of guests" name="guests">
-                </div>
-                <div class="inputBox">
-                    <span>Payment data :</span>
-                    <input type="number" placeholder="enter your card numbers" name="cardnumber">
-                    <input type="number" placeholder="enter the card owner's dni" name="dni">
-                    <input type="number" placeholder="enter your card code" name="code">
-                </div>
-            </div>
-
-            <input type="submit" value="submit" class="btn" name="send">
-        </form>
+    <section class="myorders">
+        <h1 class="heading-title" style="background-color:#60DBCD;">My orders</h1>
+        <div class="row border-top">
+            <p>PAQUETE</p>
+            <a href="#" class="btn">Delete</a>
+        </div>
+        <div class="row border-top border-bottom">
+            <p>PAQUETE</p>
+            <a href="#" class="btn">Delete</a>
+        </div>
+        <div class="row border-top border-bottom">
+            <p>PAQUETE</p>
+            <a href="#" class="btn">Delete</a>
+        </div>
     </section>
 
     <section class="footer">
@@ -94,9 +79,9 @@
 
             <div class="box">
                 <h3>contact info</h3>
-                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#"> <i class="fas fa-envelope"></i> magic_carpet@gmail.com </a>
-                <a href="#"> <i class="fas fa-map"></i> Buenos Aires, Argentina - AA0123RF </a>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"><i class="fas fa-envelope"></i> magic_carpet@gmail.com </a>
+                <a href="#"><i class="fas fa-map"></i> Buenos Aires, Argentina - AA0123RF </a>
             </div>
 
             <div class="box">
@@ -109,11 +94,7 @@
         </div>
 
         <div class="credit"><span>Magic Carpet enterprise</span> | all rights reserved </div>
-
     </section>
-
-    <!-- swiper js link  -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
