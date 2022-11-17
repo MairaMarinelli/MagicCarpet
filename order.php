@@ -45,17 +45,42 @@
 
     <section class="myorders">
         <h1 class="heading-title" style="background-color:#60DBCD;">My orders</h1>
-        <div class="row border-top">
-            <p>PAQUETE</p>
-            <a href="#" class="btn">Delete</a>
-        </div>
-        <div class="row border-top border-bottom">
-            <p>PAQUETE</p>
-            <a href="#" class="btn">Delete</a>
-        </div>
-        <div class="row border-top border-bottom">
-            <p>PAQUETE</p>
-            <a href="#" class="btn">Delete</a>
+        <div class="product">
+            <div class="shop">
+                <div class="box">
+					<img src="images/camping.jpg">
+					<div class="content">
+						<h3>Camping</h3>
+						<h4>Price: $400</h4>
+						<p class="unit">People: <input name="" value="1"></p>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Delete</span></p>
+					</div>
+				</div>
+                <div class="box">
+					<img src="images/tourists.jpg">
+					<div class="content">
+						<h3>Tour</h3>
+						<h4>Price: $500</h4>
+						<p class="unit">People: <input name="" value="1"></p>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Delete</span></p>
+					</div>
+				</div>
+                <div class="box">
+					<img src="images/athenas.jpg">
+					<div class="content">
+						<h3>sightseeing</h3>
+						<h4>Price: $700</h4>
+						<p class="unit">People: <input name="" value="1"></p>
+						<p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Delete</span></p>
+					</div>
+				</div>
+            </div>
+
+            <div class="side-bar">
+				<p><span>Subtotal</span> <span>$1600</span></p>
+				<hr>
+				<p><span>Total</span> <span>$1600</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+			</div>
         </div>
     </section>
 
@@ -68,13 +93,13 @@
                 <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
                 <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
             </div>
-
+            
             <div class="box">
-                <h3>extra links</h3>
-                <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
-                <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
-                <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
-                <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-angle-right"></i> contact</a>
+                <a href="about.php"> <i class="fas fa-angle-right"></i> terms of use</a>
+                <a href="profile.php"> <i class="fas fa-angle-right"></i> profile</a>
+                <a href="order.php"> <i class="fas fa-angle-right"></i> orders</a>
             </div>
 
             <div class="box">
