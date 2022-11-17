@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>register form</title>
+<?php
+    $connection = mysqli_connect('localhost','root','','magiccarpet');
 
-   <link rel="stylesheet" href="css/style.css">
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
 
-</head>
-<body>
-   
-   <div class="form-container">
+    if($connection->connect_error){
+        die('Connection failed:' .$connection->connect_error);
+    }
+    else{
+        $select = " SELECT * FROM user WHERE email = '$email' ";
+        $result = mysqli_query($connection, $select);
 
-      <form action="" method="post">
-         <h3>register</h3>
-
-         <input type="email" name="email" required placeholder="enter your email">
-         <input type="password" name="password" required placeholder="enter your password">
-         <input type="password" name="cpassword" required placeholder="confirm your password">
-         <select name="user_type">
-            <option value="user">user</option>
-            <option value="admin">admin</option>
-         </select>
-         <input type="submit" name="submit" value="register now" class="form-btn" onclick="location.href='home.php'">
-         <p>already have an account? <a href="login_form.php">login now</a></p>
-      </form>
-
-   </div>
-
-</body>
-</html>
+        if(mysqli_num_rows($result) > 0){
+            $error[] = 'this user already exists!';
+        }else{
+            if($password != $cpassword){
+                $error[] = 'the passwords dont match';
+            }else{
+                $x = $connection->prepare("insert into user(email, password) values(?,?)");
+                $x->bind_param("ss",$email,$password);
+                $x->execute();
+                echo "User created...";
+                $x->close();
+                $connection->close();
+            }
+        }
+    }
+?>

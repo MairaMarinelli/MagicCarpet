@@ -30,8 +30,8 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="login_form.php">Log in</a>
-                    <a href="register_form.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                    <a href="register.php">Sign up</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
@@ -40,9 +40,9 @@
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 
-    <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+    <!-- <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
         <h1>book</h1>
-    </div>
+    </div> -->
 
     <section class="booking">
         <h1 class="heading-title">book your trip!</h1>
@@ -110,15 +110,6 @@
         <div class="credit"><span>Magic Carpet enterprise</span> | all rights reserved </div>
 
     </section>
-
-
-
-
-
-
-
-
-
 
     <!-- swiper js link  -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

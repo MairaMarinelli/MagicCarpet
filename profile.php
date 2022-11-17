@@ -32,8 +32,8 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="login_form.php">Log in</a>
-                    <a href="register_form.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                    <a href="register.php">Sign up</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
@@ -44,32 +44,36 @@
 
     <section class="profile">
         <h1 class="heading-title">edit your profile!</h1>
-        <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/user-icon.png"></div>
-        </div>
-        <form action="profile_form.php" method="post" class="col-md-5 border-right profile-form">
-            <div class="flex">
-                <div class="inputBox">
-                    <span>name :</span>
-                    <input type="text" placeholder="enter your name" name="name">
-                    <span>surname :</span>
-                    <input type="text" placeholder="enter your surname" name="surname">
-                </div>
-                <div class="inputBox">
-                    <span>Mobile Number :</span>
-                    <input type="number" placeholder="enter your mobilenumber" name="mobilenumber">
-                    <span>Address :</span>
-                    <input type="text" placeholder="enter your address" name="address">
-                </div>
-                <div class="inputBox">
-                    <span>State :</span>
-                    <input type="text" placeholder="enter your state" name="state">
-                    <span>Address :</span>
-                    <input type="text" placeholder="enter your country" name="country">
-                </div>
+        <div class="row">
+            <div class="col-md-4 border-right user">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/user-icon.png"></div>
             </div>
-            <input type="submit" value="submit" class="btn" name="send">
-        </form>
+            <div class="col-md-8">
+                <form action="profile_form.php" method="post" class="profile-form">
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>name :</span>
+                            <input type="text" placeholder="enter your name" name="name">
+                            <span>surname :</span>
+                            <input type="text" placeholder="enter your surname" name="surname">
+                        </div>
+                        <div class="inputBox">
+                            <span>Mobile Number :</span>
+                            <input type="number" placeholder="enter your phone" name="mobilenumber">
+                            <span>Address :</span>
+                            <input type="text" placeholder="enter your address" name="address">
+                        </div>
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="enter your state" name="state">
+                            <span>Country :</span>
+                            <input type="text" placeholder="enter your country" name="country">
+                        </div>
+                    </div>
+                    <input type="submit" value="submit" class="btn" name="send">
+                </form>      
+            </div>
+        </div>
     </section>
 
     <section class="footer">

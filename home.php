@@ -43,8 +43,8 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="login_form.php">Log in</a>
-                    <a href="register_form.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                    <a href="register.php">Sign up</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <div class="swiper-slide slide" style="background:url(images/home-slide-7.jpg) no-repeat">
                     <div class="content">
                     <span>explore, discover, travel</span>
-                    <h3>discover new places</h3>
+                    <h3>travel arround the world</h3>
                     <a href="package.php" class="btn">discover more</a>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                 <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
                     <div class="content">
                     <span>explore, discover, travel</span>
-                    <h3>make your tour worthwhile</h3>
+                    <h3>travel arround the world</h3>
                     <a href="package.php" class="btn">discover more</a>
                     </div>
                 </div>
@@ -119,14 +119,6 @@
                 <img src="images/services-tent.png" alt="">
                 <h3>camping</h3>
             </div>
-        </div>
-    </section>
-
-    <section class="home-offer">
-        <div class="content">
-            <h3>upto 50% off</h3>
-            <p>Use our code to save up to 50% off on your next purchase!</p>
-            <a href="book.php" class="btn">book now</a>
         </div>
     </section>
 

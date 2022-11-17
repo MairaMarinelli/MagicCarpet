@@ -30,8 +30,8 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="login_form.php">Log in</a>
-                    <a href="register_form.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                    <a href="register.php">Sign up</a>
                     <a href="profile.php">Profile</a>
                 </div>
             </div>
@@ -51,136 +51,103 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-1.jpg" alt="">
+                    <img src="images/waterfalls.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>adventure</h3>
+                    <p>Come join us on this amazing journey!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-2.jpg" alt="">
+                    <img src="images/athenas.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>sightseeing</h3>
+                    <p>Discover places your have never been before!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-3.jpg" alt="">
+                    <img src="images/relaxing.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>relax</h3>
+                    <p>Come and forget about all your worries!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-4.jpg" alt="">
+                    <img src="images/sightseeing.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>sightseeing</h3>
+                    <p>Come take a gorgeous picture!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-5.jpg" alt="">
+                    <img src="images/city.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>city</h3>
+                    <p>Come to visit this beautiful city!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-6.jpg" alt="">
+                    <img src="images/camping.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>Camping</h3>
+                    <p>Discover your wild side!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-7.jpg" alt="">
+                    <img src="images/about.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>relax</h3>
+                    <p>Relax on the beach!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-8.jpg" alt="">
+                    <img src="images/tourists.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>tour</h3>
+                    <p>take amazing pictures with this tour!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-9.jpg" alt="">
+                    <img src="images/thailand.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                    <h3>adventure</h3>
+                    <p>discover new places!</p>
                     <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-10.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                    <a href="book.php" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-11.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                    <a href="book.php" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-12.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                    <a href="book.php" class="btn">book now</a>
-                </div>
-            </div>
-        </div>
+        </div> 
 
         <div class="load-more"><span class="btn">load more</span></div>
     </section>
