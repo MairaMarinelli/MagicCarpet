@@ -36,8 +36,13 @@
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
                     <a href="order.php">My orders</a>
-                    <a href="profile.php">Profile</a>
-                    <a href="admin.php">Admin</a>
+                    <?php
+                        if(isset($_SESSION['id'])){
+                            print "<a href='profile.php'>Profile</a>"; 
+                            print "<a href='logout.php'>Log out</a>"; 
+                            print "<a href='admin.php'>Admin</a>";
+                        }
+                    ?>
                 </div>
             </div>
         </nav>

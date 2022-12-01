@@ -5,6 +5,8 @@
     if(isset($_POST['submit'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $cpassword = $_POST['npassword'];
+        $npassword = $_POST['cpassword'];
 
         if($connection->connect_error){
             die('Connection failed:' .$connection->connect_error);
@@ -15,16 +17,13 @@
 
             if(mysqli_num_rows($result) > 0){
                 $user_data = mysqli_fetch_assoc($result);
-                if($user_data['password'] == $password){
-                    $_SESSION['id'] = $user_data['id'];
-                    $_SESSION['name'] = $user_data['name'];
-                    $_SESSION['surname'] = $user_data['surname'];
-                    $_SESSION['mobile'] = $user_data['mobile'];
-                    $_SESSION['address'] = $user_data['address'];
-                    $_SESSION['state'] = $user_data['state'];
-                    $_SESSION['country'] = $user_data['country'];
-                    header('location:home.php');
+                if($user_data['password'] == $password && $npassword == $cpassword){
+                    $update = "UPDATE user SET password = '$npassword' WHERE email = '$email'";
+                    mysqli_query($connection, $update);
+                    echo "password changed successfully";
+                    header('location:profile.php');
                 }
+                echo "incorrect user or password";
             }else{
                 echo "incorrect user or password";
             }

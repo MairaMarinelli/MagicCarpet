@@ -1,7 +1,6 @@
 <?php
     session_start();
     @include 'config.php';
-    @include 'functions.php';
 
     if(isset($_POST['submit'])){
         $email = $_POST['email'];
@@ -12,32 +11,21 @@
             die('Connection failed:' .$connection->connect_error);
         }
         else{
-            if(empty($email) && empty($password) && empty($cpassword)){
-                $error[] = 'Invalid information';
-                
+            $select = " SELECT * FROM user WHERE email = '$email' ";
+            $result = mysqli_query($connection, $select);
+    
+            if(mysqli_num_rows($result) > 0){
+                echo "Invalid information";
             }else{
-                $select = " SELECT * FROM user WHERE email = '$email' ";
-                $result = mysqli_query($connection, $select);
-        
-                if(mysqli_num_rows($result) > 0){
-                    $error[] = 'Invalid information';
+                if($password != $cpassword){
+                    echo "The passwords dont match";
                 }else{
-                    if($password != $cpassword){
-                        $error[] = 'The passwords dont match';
-                    }else{
-                        $x = $connection->prepare("insert into user(email, password) values(?,?)");
-                        $x->bind_param("ss",$email,$password);
-                        $x->execute();
-                        echo "User created...";
-                        $x->close();
-                        $connection->close();
-
-                        //header("Location: login.php");
-                        //die;
-                    }
+                    $insert = "INSERT INTO user(email, password) VALUES('$email','$password')";
+                    mysqli_query($connection, $insert);
+                    echo "User created...";
+                    header('location:home.php');
                 }
             }
         }
-        echo "Invalid information";
     }
 ?>

@@ -14,6 +14,26 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script language="javascript">
+        var x = 0;
+
+        function hola(x){
+            if(x == 0) {
+                document.getElementById("cont1").style.visibility="hidden";
+                document.getElementById("cont2").style.visibility="hidden";
+            }
+
+            if(x == 1) {
+                document.getElementById("cont1").style.visibility="visible";
+                document.getElementById("cont2").style.visibility="hidden"; 
+            }
+
+            if(x == 2)  {
+                document.getElementById("cont1").style.visibility="hidden";
+                document.getElementById("cont2").style.visibility="visible"; 
+            }
+        }
+    </script> -->
 </head>
 <body>
 
@@ -31,10 +51,15 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
-                    <a href="logout.php">Log out</a>
                     <a href="order.php">My orders</a>
-                    <a href="profile.php">Profile</a>
-                    <a href="admin.php">Admin</a>
+                    <?php
+                        session_start();
+                        if(isset($_SESSION['id'])){
+                            print "<a href='profile.php'>Profile</a>"; 
+                            print "<a href='logout.php'>Log out</a>"; 
+                            print "<a href='admin.php'>Admin</a>";
+                        }
+                    ?>
                 </div>
             </div>
         </nav>

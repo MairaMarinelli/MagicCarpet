@@ -9,7 +9,7 @@
                 return $user_data;
             }
         }
-        header("Location: login.php");
-        die;
+        header("location:login.php"); 
+        echo "no hay nadie loggeado";
     }
 ?>

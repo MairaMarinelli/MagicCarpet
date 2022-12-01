@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login form</title>
+    <title>change password</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="header">
+<section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
 
         <nav class="navbar d-flex justify-content-right">
@@ -41,15 +44,16 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
-    
+
     <div class="form-container">
-        <form action="login_form.php" method="post">
-            <h3>log in</h3>
+        <form action="change_password_form.php" method="post">
+            <h3>change your password</h3>
 
             <input type="email" name="email" required placeholder="enter your email">
             <input type="password" name="password" required placeholder="enter your password">
-            <input type="submit" name="submit" value="login now" class="form-btn">
-            <p>don't have an account? <a href="register.php">register now</a></p>
+            <input type="password" name="npassword" required placeholder="enter your new password">
+            <input type="password" name="cpassword" required placeholder="confirm your new password">
+            <input type="submit" name="submit" value="submit" class="form-btn">
         </form>
     </div>
 </body>

@@ -41,8 +41,13 @@
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
                     <a href="order.php">My orders</a>
-                    <a href="profile.php">Profile</a>
-                    <a href="admin.php">Admin</a>
+                    <?php
+                        if(isset($_SESSION['id'])){
+                            print "<a href='profile.php'>Profile</a>";
+                            print "<a href='logout.php'>Log out</a>";
+                            print "<a href='admin.php'>Admin</a>";
+                        }
+                    ?>
                 </div>
             </div>
         </nav>
@@ -51,10 +56,21 @@
     </section>
 
     <section class="profile">
-        <h1 class="heading-title">edit your profile!</h1>
+        <h1 class="heading-title">profile</h1>
         <div class="row">
             <div class="col-md-4 border-right user">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/user-icon.png"></div>
+                <div class="data">
+                    <span>name :</span>
+                    <?php
+                    print $_SESSION['name']; ?>
+                    <span>surname :</span>
+                    <span>email :</span>
+                    <span>mobile number :</span>
+                    <span>address:</span>
+                    <span>state:</span>
+                    <span>country:</span>
+                </div>
             </div>
             <div class="col-md-8">
                 <form action="profile_form.php" method="post" class="profile-form">
@@ -66,15 +82,15 @@
                             <input type="text" placeholder="enter your surname" name="surname">
                         </div>
                         <div class="inputBox">
-                            <span>Mobile Number :</span>
+                            <span>mobile number :</span>
                             <input type="number" placeholder="enter your phone" name="mobilenumber">
-                            <span>Address :</span>
+                            <span>address :</span>
                             <input type="text" placeholder="enter your address" name="address">
                         </div>
                         <div class="inputBox">
-                            <span>State :</span>
+                            <span>state :</span>
                             <input type="text" placeholder="enter your state" name="state">
-                            <span>Country :</span>
+                            <span>country :</span>
                             <input type="text" placeholder="enter your country" name="country">
                         </div>
                     </div>
@@ -82,6 +98,14 @@
                 </form>      
             </div>
         </div>
+
+        <form action="change_password.php" method="post" class="profile_buttoms">
+            <input type="submit" name="submit" value="change password" class="form-btn">
+        </form>
+        
+        <form action="logout.php" method="post" class="profile_buttoms">
+            <input type="submit" name="submit" value="log out" class="form-btn">
+        </form>
     </section>
 
     <section class="footer">
@@ -117,7 +141,7 @@
                 <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
             </div>
         </div>
-
+        
         <div class="credit"><span>Magic Carpet enterprise</span> | all rights reserved </div>
 
     </section>

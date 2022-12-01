@@ -29,7 +29,7 @@
         <nav class="navbar d-flex justify-content-right">
             <a href="home.php">home</a>
             <a href="about.php">about</a>
-            <a href="package.php">package</a>
+            <a href="package.php">packages</a>
             <div class="dropdown">
                 <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
@@ -38,8 +38,14 @@
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
                     <a href="order.php">My orders</a>
-                    <a href="profile.php">Profile</a>
-                    <a href="admin.php">Admin</a>
+                    <?php
+                        session_start();
+                        if(isset($_SESSION['id'])){
+                            print "<a href='profile.php'>Profile</a>"; 
+                            print "<a href='logout.php'>Log out</a>"; 
+                            print "<a href='admin.php'>Admin</a>";
+                        }
+                    ?>
                 </div>
             </div>
         </nav>
@@ -62,18 +68,24 @@
                 </div>
                 <div class="inputBox">
                     <span>dni :</span>
-                    <input type="number" placeholder="enter your dni" name="dni">
+                    <input type="text" placeholder="enter your dni" name="dni">
                 </div>
                 <div class="inputBox">
                     <span>how many :</span>
                     <input type="number" placeholder="number of guests" name="guests">
                 </div>
                 <div class="inputBox">
+                    <span>check in :</span>
+                    <input type="date" placeholder="check in date" name="checkin">
+                    <span>check out :</span>
+                    <input type="date" placeholder="check out date" name="checkout">
+                </div>
+                <!-- <div class="inputBox">
                     <span>Payment data :</span>
                     <input type="number" placeholder="enter your card numbers" name="cardnumber">
                     <input type="number" placeholder="enter the card owner's dni" name="dni">
                     <input type="number" placeholder="enter your card code" name="code">
-                </div>
+                </div> -->
             </div>
 
             <input type="submit" value="submit" class="btn" name="send">
