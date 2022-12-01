@@ -24,7 +24,7 @@
         <nav class="navbar d-flex justify-content-right">
             <a href="home.php">home</a>
             <a href="about.php">about</a>
-            <a href="package.php">package</a>
+            <a href="package.php">packages</a>
             <div class="dropdown">
                 <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
@@ -34,6 +34,7 @@
                     <a href="register.php">Sign up</a>
                     <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
+                    <a href="admin.php">Admin</a>
                 </div>
             </div>
         </nav>

@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    @include 'config.php';
+    @include 'functions.php';
+
+    $user_data = check_login($connection);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +39,7 @@
                     <a href="register.php">Sign up</a>
                     <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
+                    <a href="admin.php">Admin</a>
                 </div>
             </div>
         </nav>

@@ -19,11 +19,11 @@
 
     <section class="header">
         <a href="home.php" class="logo-name"><img src="images/magic-carpet.png" class="png"><span class="logo">Magic Carpet</span></a>
-
+        
         <nav class="navbar d-flex justify-content-right">
             <a href="home.php">home</a>
             <a href="about.php">about</a>
-            <a href="package.php">package</a>
+            <a href="package.php">packages</a>
             <div class="dropdown">
                 <button class="dropbtn"><img src="images/user-icon.png" alt="" width="32" height="32" class="rounded-circle">
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
@@ -31,8 +31,10 @@
                 <div class="dropdown-content">
                     <a href="login.php">Log in</a>
                     <a href="register.php">Sign up</a>
+                    <a href="logout.php">Log out</a>
                     <a href="order.php">My orders</a>
                     <a href="profile.php">Profile</a>
+                    <a href="admin.php">Admin</a>
                 </div>
             </div>
         </nav>
@@ -115,34 +117,34 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="images/img-1.jpg" alt="">
+                    <img src="images/waterfalls.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <h3>adventure</h3>
+                    <p>Come join us on this amazing journey!</p>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="images/img-2.jpg" alt="">
+                    <img src="images/athenas.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <h3>sightseeing</h3>
+                    <p>Discover places your have never been before!</p>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
-            
+
             <div class="box">
                 <div class="image">
-                    <img src="images/img-3.jpg" alt="">
+                    <img src="images/relaxing.jpg" alt="">
                 </div>
                 <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.php" class="btn">book now</a>
+                    <h3>relax</h3>
+                    <p>Come and forget about all your worries!</p>
+                    <div class="btn-book"><a href="book.php" class="btn">book now</a></div>
                 </div>
             </div>
         </div>
