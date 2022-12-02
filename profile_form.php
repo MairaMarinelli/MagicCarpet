@@ -1,4 +1,6 @@
 <?php
+    //@include 'login_form.php';
+    session_start();
     $connection = mysqli_connect('localhost','root','','magiccarpet');
 
     $name = $_POST['name'];
@@ -12,17 +14,11 @@
         die('Connection failed:' .$connection->connect_error);
     }
     else{
-        // $x = $connection->prepare("insert into user(name, surname, mobilenumber, address, state, country)
-        //     values(?,?,?,?,?,?)");
-        // $x->bind_param("ssisss",$name,$surname,$mobilenumber,$address,$state,$country);
-        // $x->execute();
-        // echo "Changes saved...";
-        // $x->close();
-        // $connection->close();
-
-        $insert = "INSERT INTO user(name, surname, mobilenumber, address, state, country) VALUES('$name','$surname','$mobilenumber','$address','$state','$country')";
-        mysqli_query($connection, $insert);
-        echo "User updated...";
+        echo $_SESSION['id'];
+        //echo $_SESSION['Sesion']['email'];
+        $update = "UPDATE `user` SET `name` = '$name', `surname` = '$surname', `mobilenumber` = '$mobilenumber', `address` = '$address', `state` = '$state', `country` = '$country' WHERE `id` = {$_SESSION['id']}";
+        mysqli_query($connection, $update);
         header('location:profile.php');
+        echo "User updated...";
     }
 ?>

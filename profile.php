@@ -61,15 +61,24 @@
             <div class="col-md-4 border-right user">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/user-icon.png"></div>
                 <div class="data">
-                    <span>name :</span>
                     <?php
-                    print $_SESSION['name']; ?>
-                    <span>surname :</span>
+                        $select = "SELECT * FROM `user` WHERE `id` = {$_SESSION['id']}";
+                        $result = mysqli_query($connection, $select);
+                        if(mysqli_num_rows($result) > 0){
+                            print "<span>name : {$user_data['name']}</span>";
+                            print "<span>surname : {$user_data['surname']}</span>";
+                            print "<span>mobile number : {$user_data['mobilenumber']}</span>";
+                            print "<span>address : {$user_data['address']}</span>";
+                            print "<span>state : {$user_data['state']}</span>";
+                            print "<span>country : {$user_data['country']}</span>";
+                        }
+                    ?>
+                    <!-- <span>surname :</span>
                     <span>email :</span>
                     <span>mobile number :</span>
                     <span>address:</span>
                     <span>state:</span>
-                    <span>country:</span>
+                    <span>country:</span> -->
                 </div>
             </div>
             <div class="col-md-8">

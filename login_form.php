@@ -1,5 +1,6 @@
 <?php
     session_start();
+    //$_SESSION['Sesion'] = array();
     @include 'config.php';
 
     if(isset($_POST['submit'])){
@@ -17,12 +18,6 @@
                 $user_data = mysqli_fetch_assoc($result);
                 if($user_data['password'] == $password){
                     $_SESSION['id'] = $user_data['id'];
-                    $_SESSION['name'] = $user_data['name'];
-                    $_SESSION['surname'] = $user_data['surname'];
-                    $_SESSION['mobile'] = $user_data['mobile'];
-                    $_SESSION['address'] = $user_data['address'];
-                    $_SESSION['state'] = $user_data['state'];
-                    $_SESSION['country'] = $user_data['country'];
                     header('location:home.php');
                 }
             }else{
