@@ -30,9 +30,9 @@
             </div>
         </div>
 
-        <div class="row add">
-            <a href="#"><i class="fa fa-add"></i>New Product</a>
-        </div>
+        <form action="add_product_form.php" method="post" class="row add">
+            <input type="submit" name="submit" value="add product" class="form-btn">
+        </form>
 
         <div class="product">
             <div class="box">
@@ -57,6 +57,9 @@
                         <h4>Lorem ipsum dolor sit amet consectetur.</h4>
                         <h4>Price: $400</h4>
                     </div>
+                    <form action="delete.php" method="post" class="btn-delete-edit">
+                        <input type="submit" name="submit" value="delete" class="form-btn">
+                    </form>
                     <div class="col-md-6 btn-delete-edit">
                         <a href="#" style="background-color:#ff3333"><i class="fa fa-trash"></i>Delete</a>
                         <a href="#" style="background-color:#00cc00"><i class="fa fa-edit"></i>Edit</a>

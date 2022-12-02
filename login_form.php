@@ -1,6 +1,5 @@
 <?php
     session_start();
-    //$_SESSION['Sesion'] = array();
     @include 'config.php';
 
     if(isset($_POST['submit'])){

@@ -25,14 +25,16 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="register.php">Sign up</a>
-                    <a href="order.php">My orders</a>
                     <?php
                         session_start();
                         if(isset($_SESSION['id'])){
-                            print "<a href='profile.php'>Profile</a>"; 
-                            print "<a href='logout.php'>Log out</a>";
+                            print "<a href='profile.php'>Profile</a>";
                             print "<a href='admin.php'>Admin</a>";
+                            print "<a href='order.php'>My orders</a>";
+                            print "<a href='logout.php'>Log out</a>";
+                        }
+                        else{
+                            print "<a href='login.php'>Log in</a>";
                         }
                     ?>
                 </div>

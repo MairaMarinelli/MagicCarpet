@@ -38,14 +38,16 @@
                     <i class="fa fa-caret-down" style="padding-left:5px;"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="login.php">Log in</a>
-                    <a href="register.php">Sign up</a>
-                    <a href="order.php">My orders</a>
                     <?php
+                        session_start();
                         if(isset($_SESSION['id'])){
                             print "<a href='profile.php'>Profile</a>";
-                            print "<a href='logout.php'>Log out</a>";
                             print "<a href='admin.php'>Admin</a>";
+                            print "<a href='order.php'>My orders</a>";
+                            print "<a href='logout.php'>Log out</a>";
+                        }
+                        else{
+                            print "<a href='login.php'>Log in</a>";
                         }
                     ?>
                 </div>
@@ -73,12 +75,6 @@
                             print "<span>country : {$user_data['country']}</span>";
                         }
                     ?>
-                    <!-- <span>surname :</span>
-                    <span>email :</span>
-                    <span>mobile number :</span>
-                    <span>address:</span>
-                    <span>state:</span>
-                    <span>country:</span> -->
                 </div>
             </div>
             <div class="col-md-8">
