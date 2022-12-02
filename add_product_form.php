@@ -1,25 +1,3 @@
-<?php
-    //session_start();
-    @include 'config.php';
-
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $description = $_POST['description'];
-        $price = $_POST['price'];
-        $image = $_FILES['image'];
-
-        if($connection->connect_error){
-            die('Connection failed:' .$connection->connect_error);
-        }
-        else{
-            $insert = "INSERT INTO product(`name`, `description`, `price`, `image`) VALUES('$name','$description','$price','$image')";
-            mysqli_query($connection, $insert);
-            echo "Product created...";
-            //header('location:admin.php');
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,21 +45,13 @@
     </section>
     
     <div class="form-container">
-        <form action="" method="post">
+        <form action="add_product.php" method="post">
             <h3>add product</h3>
 
             <input type="text" name="name" required placeholder="enter the name">
             <input type="text" name="description" required placeholder="enter the description">
             <input type="int" name="price" required placeholder="price">
             <input type="file" name="image">
-            <!-- <input type="file" name="image" accept="image/*" onchange="loadFile(event)">
-                <p><img id="output" width="200"/></p>
-            <script>
-                var loadFile = function(event) {
-                    var image = document.getElementById('output');
-                    image.src=URL.createObjectURL(event.target.files[0]);
-                };
-            </script> -->
             <input type="submit" name="submit" value="add" class="form-btn">
         </form>
     </div>

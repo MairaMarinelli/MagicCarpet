@@ -15,7 +15,6 @@
     }
     else{
         echo $_SESSION['id'];
-        //echo $_SESSION['Sesion']['email'];
         $update = "UPDATE `user` SET `name` = '$name', `surname` = '$surname', `mobilenumber` = '$mobilenumber', `address` = '$address', `state` = '$state', `country` = '$country' WHERE `id` = {$_SESSION['id']}";
         mysqli_query($connection, $update);
         header('location:profile.php');

@@ -39,7 +39,6 @@
                 </button>
                 <div class="dropdown-content">
                     <?php
-                        session_start();
                         if(isset($_SESSION['id'])){
                             print "<a href='profile.php'>Profile</a>";
                             print "<a href='admin.php'>Admin</a>";

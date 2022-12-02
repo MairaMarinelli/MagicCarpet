@@ -1,4 +1,5 @@
 <?php
+    session_start();
     @include 'config.php';
     @include 'functions.php';
 
@@ -35,7 +36,6 @@
                 </button>
                 <div class="dropdown-content">
                     <?php
-                        session_start();
                         if(isset($_SESSION['id'])){
                             print "<a href='profile.php'>Profile</a>";
                             print "<a href='admin.php'>Admin</a>";
@@ -52,10 +52,6 @@
 
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
-
-    <!-- <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
-        <h1>book</h1>
-    </div> -->
 
     <section class="booking">
         <h1 class="heading-title">book your trip!</h1>
