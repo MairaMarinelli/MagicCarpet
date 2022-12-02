@@ -11,13 +11,13 @@ window.onscroll = () =>{
    navbar.classList.remove('active');
 };
 
-// var swiper = new Swiper(".home-slider", {
-//    loop:true,
-//    navigation: {
-//      nextEl: ".swiper-button-next",
-//      prevEl: ".swiper-button-prev",
-//    },
-// });
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+});
 
 let loadMoreBtn = document.querySelector('.packages .load-more .btn');
 let currentItem = 3;
